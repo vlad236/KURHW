@@ -1,18 +1,18 @@
-import java.util.Scanner;
-
+п»їimport java.util.Scanner;
+/** Р’С‹С‡РёСЃР»РµРЅРёРµ С‡Р°СЃС‚РЅРѕРіРѕ РґРІСѓС… С‡РёСЃРµР» */
 public class TaskThree {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); //создаем объект sc типа scanner
-		System.out.print("Введите делимое: ");
-		double dividend = sc.nextDouble(); //создаем объект divident типа double, в который значение делимого будут заноситьс с клавиатуры 
-		System.out.print("Введите делитель: ");
-		int divider = sc.nextInt(); //создаем объект divider типа int, в который значение делимого будут заноситьс с клавиатуры
-		if (divider == 0) //Проверка делителя на ноль
-			System.out.println("На ноль делить нельзя!");
+		Scanner sc = new Scanner(System.in); //СЃРѕР·РґР°РµРј РѕР±СЉРµРєС‚ sc С‚РёРїР° scanner
+		System.out.print("Р’РІРµРґРёС‚Рµ РґРµР»РёРјРѕРµ: ");
+		double dividend = sc.nextDouble(); //СЃРѕР·РґР°РµРј РѕР±СЉРµРєС‚ divident С‚РёРїР° double, РІ РєРѕС‚РѕСЂС‹Р№ Р·РЅР°С‡РµРЅРёРµ РґРµР»РёРјРѕРіРѕ Р±СѓРґСѓС‚ Р·Р°РЅРѕСЃРёС‚СЊСЃ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ 
+		System.out.print("Р’РІРµРґРёС‚Рµ РґРµР»РёС‚РµР»СЊ: ");
+		int divider = sc.nextInt(); //СЃРѕР·РґР°РµРј РѕР±СЉРµРєС‚ divider С‚РёРїР° int, РІ РєРѕС‚РѕСЂС‹Р№ Р·РЅР°С‡РµРЅРёРµ РґРµР»РёРјРѕРіРѕ Р±СѓРґСѓС‚ Р·Р°РЅРѕСЃРёС‚СЊСЃ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+		if (divider == 0) //РџСЂРѕРІРµСЂРєР° РґРµР»РёС‚РµР»СЏ РЅР° РЅРѕР»СЊ
+			System.out.println("РќР° РЅРѕР»СЊ РґРµР»РёС‚СЊ РЅРµР»СЊР·СЏ!");
 		else {
 			double result = dividend / divider;
-			System.out.println("Частное " + result);
+			System.out.println("Р§Р°СЃС‚РЅРѕРµ " + result);
 		}
 		sc.close();
 	}

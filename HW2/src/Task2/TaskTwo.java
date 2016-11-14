@@ -1,17 +1,17 @@
-import java.util.Scanner;
-
+п»їimport java.util.Scanner;
+/** РЎСЂР°РІРЅРµРЅРёРµ РґРІСѓС… С‡РёСЃРµР» */
 public class TaskTwo {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in); //Создаем объект sc типа Scanner
-		System.out.print("Первое число: ");
-		int firstNumber = sc.nextInt(); //Объявляем объект firstNumber , содержимое которого, будет вводиться с клавиатуры
-		System.out.print("Второе число: ");
-		int secondNumber = sc.nextInt(); //Объявляем объект secondNumber
-		if (firstNumber > secondNumber) //Оператор if, который сравнивает два числа
-			System.out.println("Число " + firstNumber + " больше, чем " + secondNumber);
+		Scanner sc = new Scanner(System.in); //РЎРѕР·РґР°РµРј РѕР±СЉРµРєС‚ sc С‚РёРїР° Scanner
+		System.out.print("РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ: ");
+		int firstNumber = sc.nextInt(); //РћР±СЉСЏРІР»СЏРµРј РѕР±СЉРµРєС‚ firstNumber , СЃРѕРґРµСЂР¶РёРјРѕРµ РєРѕС‚РѕСЂРѕРіРѕ, Р±СѓРґРµС‚ РІРІРѕРґРёС‚СЊСЃСЏ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+		System.out.print("Р’С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: ");
+		int secondNumber = sc.nextInt(); //РћР±СЉСЏРІР»СЏРµРј РѕР±СЉРµРєС‚ secondNumber
+		if (firstNumber > secondNumber) //РћРїРµСЂР°С‚РѕСЂ if, РєРѕС‚РѕСЂС‹Р№ СЃСЂР°РІРЅРёРІР°РµС‚ РґРІР° С‡РёСЃР»Р°
+			System.out.println("Р§РёСЃР»Рѕ" + firstNumber + " Р±РѕР»СЊС€Рµ, С‡РµРј " + secondNumber);
 		else
-			System.out.println("Число " + secondNumber + " больше, чем " + firstNumber);
+			System.out.println("Р§РёСЃР»Рѕ" + secondNumber + " Р±РѕР»СЊС€Рµ, С‡РµРј " + firstNumber);
 		sc.close();
 	}
 

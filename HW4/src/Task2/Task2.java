@@ -1,11 +1,11 @@
-
+/** РЈРґР°Р»РµРЅРёРµ РІСЃРµС… СЃРёРјРІРѕР»РѕРІ, РєСЂРѕРјРµ РїСЂРѕР±РµР»РѕРІ, РЅРµ СЏРІР»СЏСЋС‰РёС…СЃСЏ Р±СѓРєРІР°РјРё */
 public class Task2 {
 
 	public static void main(String[] args) {
 		String str = "vnm,cxb    rtijh....\\\\h";
 		String newstr = "";
-		char[] charArray = str.toCharArray();//Разбиваем массив на строку чаров
-		//Записываем в новую строку только буквы и пробелы
+		char[] charArray = str.toCharArray();//Р Р°Р·Р±РёРІР°РµРј РјР°СЃСЃРёРІ РЅР° СЃС‚СЂРѕРєСѓ С‡Р°СЂРѕРІ
+		//Р—Р°РїРёСЃС‹РІР°РµРј РІ РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ С‚РѕР»СЊРєРѕ Р±СѓРєРІС‹ Рё РїСЂРѕР±РµР»С‹
 		for (char ch: charArray){
 			if (Character.isLetter(ch) || Character.isWhitespace(ch))
 				newstr += ch;

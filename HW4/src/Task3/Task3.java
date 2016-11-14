@@ -1,18 +1,18 @@
 import java.util.Scanner;
-
+/** РЈРґР°Р»РµРЅРёРµ СЃР»РѕРІ Р·Р°РґР°РЅРЅРѕР№ РґР»РёРЅРЅС‹, РЅР°С‡РёРЅР°СЋС‰РёС…СЃСЏ РЅР° СЃРѕРіР»Р°СЃРЅСѓСЋ */
 public class Task3 {
 
 	public static void main(String[] args) {
 		String str = "sdgfbh gfsdhj afg gfg fdgff";
 		System.out.println(str);
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите длинну слова: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ СЃР»РѕРІР°: ");
 		StringBuilder sb = new StringBuilder();
 		int lengthWord = sc.nextInt();
-		String[] charArray = str.split(" "); //разбиваем текст на массив слов
+		String[] charArray = str.split(" "); //СЂР°Р·Р±РёРІР°РµРј С‚РµРєСЃС‚ РЅР° РјР°СЃСЃРёРІ СЃР»РѕРІ
 		for (int i = 0; i < charArray.length; i++){
-			char first = charArray[i].charAt(0); //Первая буква слова
-			//Исключаем слова не подходящие по нашим параметрам
+			char first = charArray[i].charAt(0); //РџРµСЂРІР°СЏ Р±СѓРєРІР° СЃР»РѕРІР°
+			//РСЃРєР»СЋС‡Р°РµРј СЃР»РѕРІР° РЅРµ РїРѕРґС…РѕРґСЏС‰РёРµ РїРѕ РЅР°С€РёРј РїР°СЂР°РјРµС‚СЂР°Рј
 			if(!((charArray[i].length() == lengthWord) && ((first == 'a')||(first == 'e')||(first == 'i')||(first == 'o')||(first == 'u')||(first == 'y')))){
 				sb.append(charArray[i]).append(" ");
 			}

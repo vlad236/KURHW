@@ -1,4 +1,4 @@
-
+/** Определение, является ли одна строка перестановкой другой */
 public class Task5 {
 
 	public static void main(String[] args) {
@@ -7,16 +7,17 @@ public class Task5 {
 
 	        char[] charArray1 = str1.toCharArray();
 	        char[] charArray2 = str2.toCharArray();
-	        //�������� ��������� �� ������
+	        int countStr1 = 0;
+	        int countStr2 = 0;
+	        //Проверяем совпадает ли длинна
 	        if (charArray1.length != charArray2.length) {
-	            System.out.println("�� ��������");
+	            System.out.println("Не является");
 	            return;
 	            
 	        }
-
+	        
 	        for(int i = 0; i < charArray1.length; i++) {
-	            int countStr1 = 0;
-	            int countStr2 = 0;
+	            
 	            for(int j = 0; j < charArray1.length; j++) {
 	                if (charArray1[i] == charArray1[j]) {
 	                    countStr1++;
@@ -27,13 +28,14 @@ public class Task5 {
 	                    countStr2++;
 	                }
 	            }
-	            if (countStr1 != countStr2) {
-	                System.out.println("�� ��������");
-	                return;
-	                
+	            
 	            }
+	        	if (countStr1 != countStr2)
+	                System.out.println("Не является");
+	            else 
+	            	System.out.println("Является");
 	        }
 
 	}
 
-}
+

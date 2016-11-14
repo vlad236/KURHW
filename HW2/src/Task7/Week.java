@@ -1,37 +1,37 @@
-import java.util.Scanner;
-
+п»їimport java.util.Scanner;
+/** Р§С‚Рѕ Р·Р° РґРµРЅСЊ РЅРµРґРµР»Рё */
 public class Week {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in); //Создаем объект sc типа Scanner
-		System.out.println("Введите номер дня недели: ");
-		Byte dayOfWeek = sc.nextByte(); //Объявление объекта дня недели 
-		switch(dayOfWeek){ //Нахождение нужного нам номера путем использование оператора Switch
+		Scanner sc = new Scanner (System.in); //РЎРѕР·РґР°РµРј РѕР±СЉРµРєС‚ sc С‚РёРїР° Scanner
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґРЅСЏ РЅРµРґРµР»Рё: ");
+		Byte dayOfWeek = sc.nextByte(); //РћР±СЉСЏРІР»РµРЅРёРµ РѕР±СЉРµРєС‚Р° РґРЅСЏ РЅРµРґРµР»Рё 
+		switch(dayOfWeek){ //РќР°С…РѕР¶РґРµРЅРёРµ РЅСѓР¶РЅРѕРіРѕ РЅР°Рј РЅРѕРјРµСЂР° РїСѓС‚РµРј РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РѕРїРµСЂР°С‚РѕСЂР° Switch
 			case 1:
-				System.out.println("Понедельник");
+				System.out.println("РџРѕРЅРµРґРµР»СЊРЅРёРє");
 				break;
 			case 2:
-				System.out.println("Вторник");
+				System.out.println("Р’С‚РѕСЂРЅРёРє");
 				break;
 			case 3:
-				System.out.println("Среда");
+				System.out.println("РЎСЂРµРґР°");
 				break;
 			case 4:
-				System.out.println("Четверг");
+				System.out.println("Р§РµС‚РІРµСЂРі");
 				break;
 			case 5:
-				System.out.println("Пятница");
+				System.out.println("РџСЏС‚РЅРёС†Р°");
 				break;
 			case 6:
-				System.out.println("Суббота");
+				System.out.println("РЎСѓР±Р±РѕС‚Р°");
 				break;
 			case 7:
-				System.out.println("Воскресение");
+				System.out.println("Р’РѕСЃРєСЂРµСЃРµРЅРёРµ");
 				break;
 			default:
-				System.out.println("Введено не верное число, дня недели с таким номером нет");
+				System.out.println("Р’РІРµРґРµРЅРѕ РЅРµ РІРµСЂРЅРѕРµ С‡РёСЃР»Рѕ, РґРЅСЏ РЅРµРґРµР»Рё СЃ С‚Р°РєРёРј РЅРѕРјРµСЂРѕРј РЅРµС‚");
 		}	
-		
+		sc.close();
 	}
 
 }

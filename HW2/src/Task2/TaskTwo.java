@@ -1,5 +1,6 @@
-﻿import java.util.Scanner;
-/** Сравнение двух чисел */
+package Task2;
+import java.util.Scanner;
+
 public class TaskTwo {
 
 	public static void main(String[] args) {

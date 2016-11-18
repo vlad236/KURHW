@@ -1,3 +1,4 @@
+package Task3;
 import java.util.Scanner;
 /** Удаление слов заданной длинны, начинающихся на согласную */
 public class Task3 {

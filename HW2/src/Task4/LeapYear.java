@@ -1,5 +1,6 @@
-﻿import java.util.Scanner;
-/** Проверка является ли год високосным */
+package Task4;
+import java.util.Scanner;
+
 public class LeapYear {
 
 	public static void main(String[] args) {

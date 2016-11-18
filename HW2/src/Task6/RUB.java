@@ -1,5 +1,6 @@
-﻿import java.util.Scanner;
-/** Слово "рубль" в правильной форме */
+package Task6;
+import java.util.Scanner;
+
 public class RUB {
 
 	public static void main(String[] args) {

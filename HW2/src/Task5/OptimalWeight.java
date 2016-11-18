@@ -1,5 +1,6 @@
-﻿import java.util.Scanner;
-/** Проверка является ли вес оптимальным */
+package Task5;
+import java.util.Scanner;
+
 public class OptimalWeight {
 
 	public static void main(String[] args) {

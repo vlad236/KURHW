@@ -1,5 +1,6 @@
-﻿import java.util.Scanner;
-/** Вычисление частного двух чисел */
+package Task3;
+import java.util.Scanner;
+
 public class TaskThree {
 
 	public static void main(String[] args) {

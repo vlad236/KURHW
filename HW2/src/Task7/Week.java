@@ -1,5 +1,6 @@
-﻿import java.util.Scanner;
-/** Что за день недели */
+package Task7;
+import java.util.Scanner;
+
 public class Week {
 
 	public static void main(String[] args) {

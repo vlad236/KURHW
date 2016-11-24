@@ -12,14 +12,16 @@ public class Main {
 	            System.out.println("\n1. Показать камни в ожерелье");
 	            System.out.println("2. Добавить камень алмаз");
 	            System.out.println("3. Добавить камень янтарь");
-	            System.out.println("4. Удалить камень");
-	            System.out.println("5. Отсортировать по ценности");
-	            System.out.println("6. Посчитать общий вес и стоимость");
-	            System.out.println("7. Найти камни в ожерелье, соответствующие заданному диапазону парметров прозрачности");
+				System.out.println("4. Добавить камень рубин");
+	            System.out.println("5. Добавить камень малахит");
+	            System.out.println("6. Удалить камень");
+	            System.out.println("7. Отсортировать по ценности");
+	            System.out.println("8. Посчитать общий вес и стоимость");
+	            System.out.println("9. Найти камни в ожерелье, соответствующие заданному диапазону парметров прозрачности");
 	            System.out.println("0. Выйти");
 	            System.out.print("Ваш выбор: ");
 	            Scanner sc = new Scanner(System.in);
-	            int choice = sc.nextInt();
+				int choice = sc.nextInt();
 	            switch (choice) {
 	                case 0:
 	                    return;
@@ -32,15 +34,23 @@ public class Main {
 	                case 3:
 	                    util.addAmber();
 	                    break;
-	                case 4:
-	                    util.delete();
+					case 4:
+	                    util.addRuby();
 	                    break;
 	                case 5:
-	                    util.sort();
+	                    util.addMalachite();
+	                    break;
 	                case 6:
+	                    util.delete();
+	                    break;
+	                case 7:
+	                    util.sort();
+						break;
+	                case 8:
 	                    util.totalCost();
 	                    util.totalWeigth();
-	                case 7:
+						break;
+	                case 9:
 	                    util.opacityChoice();
 	                    break;
 	                default:

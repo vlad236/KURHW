@@ -5,8 +5,8 @@ public class SemiPrecious extends Stone{
     private double weight;
 
     public SemiPrecious(double weight, double cost, double opacity) {
-        super(cost, opacity);
-        this.weight = weight;
+        super(opacity, cost, weight);
+        this.weight = super.getWeight();
     }
 
     public double getWeight() {

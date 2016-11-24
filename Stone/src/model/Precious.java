@@ -5,8 +5,8 @@ public class Precious extends Stone{
     private double weightCarat;
 
     public Precious(double weightCarat, double cost, double opacity) {
-        super(cost, opacity);
-        this.weightCarat = weightCarat;
+        super(opacity, cost, weightCarat / 5);
+        this.weightCarat = super.getWeight() * 5;
     }
 
     public double getWeightCarat() {

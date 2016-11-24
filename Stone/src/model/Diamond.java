@@ -4,7 +4,7 @@ public class Diamond extends Precious {
 
     private String shape;
 
-    public Diamond(String shape, double weightCarat, double cost, double opacity) {
+    public Diamond(String shape, double opacity, double cost, double weightCarat) {
         super(weightCarat, cost, opacity);
         this.shape = shape;
     }

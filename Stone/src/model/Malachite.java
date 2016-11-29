@@ -19,6 +19,6 @@ public class Malachite extends SemiPrecious {
 
     public void show() {
         super.show();
-        System.out.println("Махалит");
+        System.out.println(" Махалит"  + "("+ "обработка: " + (processed ? "обработан" : "не обработан") + ", прозрачность: " + getOpacity() + ", цена: " + getCost() + " руб., вес в граммах: " +  getWeight() + ")");
     }
 }

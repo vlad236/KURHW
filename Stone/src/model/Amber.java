@@ -19,6 +19,6 @@ public class Amber extends SemiPrecious {
 
     public void show() {
         super.show();
-        System.out.println("Янтарь");
+        System.out.println(" Янтарь" + "("+ "Обработка: " + processed + ", прозрачность: " + getOpacity() + ", цена: " + getCost() + " руб., вес в граммах: " +  getWeight() + ")");
     }
 }

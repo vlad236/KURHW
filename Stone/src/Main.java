@@ -17,13 +17,14 @@ public class Main {
 	            System.out.println("6. Удалить камень");
 	            System.out.println("7. Отсортировать по ценности");
 	            System.out.println("8. Посчитать общий вес и стоимость");
-	            System.out.println("9. Найти камни в ожерелье, соответствующие заданному диапазону парметров прозрачности");
+	            System.out.println("9. Найти камни в ожерелье, соответствующие заданному диапазону параметров прозрачности");
 	            System.out.println("0. Выйти");
 	            System.out.print("Ваш выбор: ");
 	            Scanner sc = new Scanner(System.in);
 				int choice = sc.nextInt();
 	            switch (choice) {
 	                case 0:
+	                	sc.close();
 	                    return;
 	                case 1:
 	                    util.show();

@@ -12,7 +12,7 @@ public class Ruby extends Precious {
 
     public void show() {
         super.show();
-        System.out.println("Рубин");
+        System.out.println(" Рубин" + "("+ "форма: " + hardness + ", прозрачность: " + getOpacity() + ", цена: " + getCost() + " руб., вес в каратах: " +  getWeightCarat() + ")");
     }
 
     public int getHardness() {

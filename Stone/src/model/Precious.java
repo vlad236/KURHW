@@ -1,12 +1,14 @@
 package model;
 
 public class Precious extends Stone{
-
+	/**
+	 * Вес камня в каратах
+	 */
     private double weightCarat;
 
     public Precious(double weightCarat, double cost, double opacity) {
-        super(opacity, cost, weightCarat / 5);
-        this.weightCarat = super.getWeight() * 5;
+        super(opacity, cost, weightCarat);
+        this.weightCarat = super.getWeight();
     }
 
     public double getWeightCarat() {

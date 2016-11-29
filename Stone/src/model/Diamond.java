@@ -1,24 +1,26 @@
 package model;
 
 public class Diamond extends Precious {
+	/**
+	 * Цвет камня
+	 */
+    private String color;
 
-    private String shape;
-
-    public Diamond(String shape, double opacity, double cost, double weightCarat) {
+    public Diamond(String color, double opacity, double cost, double weightCarat) {
         super(weightCarat, cost, opacity);
-        this.shape = shape;
+        this.color = color;
     }
 
     public String getShape() {
-        return shape;
+        return color;
     }
 
     public void setShape(String shape) {
-        this.shape = shape;
+        this.color = shape;
     }
 
     public void show() {
         super.show();
-        System.out.println("Алмаз");
+        System.out.println("Алмаз" + "("+ "цвет: " + color + ", прозрачность: " + getOpacity() + ", цена: " + getCost() + " руб., вес в каратах: " +  getWeightCarat() + ")");
     }
 }

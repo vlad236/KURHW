@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Greenhouse>
+	<flower>
+		<name>Tulip</name>
+		<soil>Подзолистая почва</soil>	
+		<origin>Cтрана происхождения: Рим</origin>
+		<VisualParameters>
+			<StemColor>Цвет стебля: Зеленый</StemColor>
+			<averageSize>Размер стебя: 40см</averageSize>
+		</VisualParameters>
+		<GrowingTips>
+			<temperature>Температура: 30градусов</temperature>
+			<watering>Полив: 500 мл в неделю</watering>
+		</GrowingTips>
+		<Multiplying>Размножение черенками</Multiplying>
+	</flower>
+	<flower>
+		<name>Rose</name>
+		<soil>Грунтовая почва</soil>
+		<origin>Cтрана происхождения: Иран</origin>
+		<VisualParameters>
+			<StemColor>Зеленый</StemColor>
+			<averageSize>Размер стебя: 50см</averageSize>
+		</VisualParameters>
+		<GrowingTips>
+			<temperature>Температура: 25градусов</temperature>
+			<watering>Полив: 300 мл в неделю</watering>
+		</GrowingTips>
+		<Multiplying>Размножение семенами</Multiplying>
+	</flower>
+</Greenhouse>

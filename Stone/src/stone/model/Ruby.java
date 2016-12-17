@@ -1,5 +1,7 @@
 
-package model;
+package stone.model;
+
+import stone.Main;
 
 public class Ruby extends Precious {
 
@@ -12,7 +14,7 @@ public class Ruby extends Precious {
 
     public void show() {
         super.show();
-        System.out.println(" Рубин" + "("+ "форма: " + hardness + ", прозрачность: " + getOpacity() + ", цена: " + getCost() + " руб., вес в каратах: " +  getWeightCarat() + ")");
+        System.out.println(Main.res.getString("47") + "("+ Main.res.getString("50") + hardness + Main.res.getString("51") + getOpacity() + Main.res.getString("52") + getCost() + Main.res.getString("53") +  getWeightCarat() + ")");
     }
 
     public int getHardness() {

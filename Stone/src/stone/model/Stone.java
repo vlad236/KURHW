@@ -1,4 +1,6 @@
-package model;
+package stone.model;
+
+import stone.Main;
 
 public class Stone implements Comparable<Stone>{
 
@@ -29,7 +31,7 @@ public class Stone implements Comparable<Stone>{
     }
 
     public void show() {
-        System.out.println("Это камень");
+        System.out.println(Main.res.getString("44"));
     }
     
     @Override

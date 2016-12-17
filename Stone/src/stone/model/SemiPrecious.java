@@ -1,4 +1,6 @@
-package model;
+package stone.model;
+
+import stone.Main;
 
 public class SemiPrecious extends Stone{
 	/**
@@ -12,7 +14,7 @@ public class SemiPrecious extends Stone{
     }
 
     public void show() {
-        System.out.print("Полудрагоценный камень ");
+        System.out.print(Main.res.getString("46"));
     }
 
 	public double getWeightGram() {

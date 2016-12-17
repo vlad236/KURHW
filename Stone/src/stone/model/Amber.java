@@ -1,4 +1,5 @@
-package model;
+package stone.model;
+import stone.Main;
 
 public class Amber extends SemiPrecious {
 
@@ -19,6 +20,6 @@ public class Amber extends SemiPrecious {
 
     public void show() {
         super.show();
-        System.out.println(" Янтарь" + "("+ "Обработка: " + processed + ", прозрачность: " + getOpacity() + ", цена: " + getCost() + " руб., вес в граммах: " +  getWeight() + ")");
+        System.out.println(Main.res.getString("49") + "("+ Main.res.getString("58") + (processed ? Main.res.getString("55") : Main.res.getString("56")) + Main.res.getString("51") + getOpacity() + Main.res.getString("52") + getCost() + Main.res.getString("54") +  getWeight() + ")");
     }
 }

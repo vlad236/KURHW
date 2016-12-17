@@ -1,4 +1,5 @@
-package model;
+package stone.model;
+import stone.Main;
 
 public class Precious extends Stone{
 	/**
@@ -20,6 +21,6 @@ public class Precious extends Stone{
     }
 
     public void show() {
-        System.out.print("Драгоценный камень ");
+        System.out.print(Main.res.getString("45"));
     }
 }

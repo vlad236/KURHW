@@ -1,22 +1,23 @@
-import model.*;
-
+package stone;
+import java.text.NumberFormat;
 import java.util.*;
 
-// TODO: 18.11.2016 Добавить оставшиейся методы, изменить добавление, возможно изменить вывод на экран(ну тут уже как душе угодно), разобраться с исключениями.
-public class StoneUtil {
+import stone.model.*;
 
+public class StoneUtil {
+	NumberFormat rubFormat = NumberFormat.getCurrencyInstance(Main.res.getLocale());
     public List<Stone> stones = new ArrayList<>();
 
     /**
-     * Этот метод выводит на консоль список камней, которые есть в ожерелье
+     * Вывод в консоль списка камней, которые есть в ожерелье
      */
     public void show() {
         int index = 1;
         if(stones.isEmpty()) {
-            System.out.println("\nНет камней в ожерелье");
+            System.out.println("\n" + Main.res.getString("16"));
             return;
         }
-        System.out.println("\nСостав вашего ожерелья:\n");
+        System.out.println("\n" + Main.res.getString("17") + ":" );
         for(Stone stone:stones) {
             System.out.print(index + ". ");
             stone.show();
@@ -31,20 +32,20 @@ public class StoneUtil {
         
         Scanner sc = new Scanner(System.in);
         boolean processed = false;
-        System.out.println("\nКамень обработан(Да/Нет)?");
+        System.out.println("\n" + Main.res.getString("18"));
         while (true) {
             String response = sc.nextLine();
-            if (response.equalsIgnoreCase("Да")) {
+            if (response.equalsIgnoreCase(Main.res.getString("yes"))) {
                 processed = true;
                 break;
             }
-            else if (response.equalsIgnoreCase("Нет")) {
+            else if (response.equalsIgnoreCase(Main.res.getString("no"))) {
                 break;
             }
             else
-                System.out.println("Повторите ввод");
+                System.out.println(Main.res.getString("21"));
         }
-        System.out.println("\nВведите прозрачность, цену и вес:");
+        System.out.println("\n" + Main.res.getString("22"));
         double opacity, cost, weight;
         while (true) {
         	opacity = sc.nextDouble();
@@ -52,13 +53,13 @@ public class StoneUtil {
         		break;
         	}
         	else {
-        		System.out.println("Прозрачность должна находится в диапозоне от 0 до 1");
+        		System.out.println(Main.res.getString("23"));
         	}
         }
         cost = sc.nextDouble();
         weight = sc.nextDouble();
         stones.add(new Amber(processed, weight, cost, opacity));
-        System.out.println("\nЯнтарный камень добавлен");
+        System.out.println("\n" + Main.res.getString("24"));
     }
     
     /**
@@ -68,20 +69,20 @@ public class StoneUtil {
        
         Scanner sc = new Scanner(System.in);
         boolean processed = false;
-        System.out.println("\nКамень обработан(Да/Нет)?");
+        System.out.println("\n" + Main.res.getString("25"));
         while (true) {
             String response = sc.nextLine();
-            if (response.equalsIgnoreCase("Да")) {
+            if (response.equalsIgnoreCase(Main.res.getString("yes"))) {
                 processed = true;
                 break;
             }
-            else if (response.equalsIgnoreCase("Нет")) {
+            else if (response.equalsIgnoreCase(Main.res.getString("no"))) {
                 break;
             }
             else
-                System.out.println("Повторите ввод");
+                System.out.println(Main.res.getString("21"));
         }
-        System.out.println("\nВведите прозрачность, цену и вес:");
+        System.out.println("\n" + Main.res.getString("22"));
         double opacity, cost, weight;
         while (true) {
         	opacity = sc.nextDouble();
@@ -89,13 +90,13 @@ public class StoneUtil {
         		break;
         	}
         	else {
-        		System.out.println("Прозрачность должна находится в диапозоне от 0 до 1");
+        		System.out.println(Main.res.getString("23"));
         	}
         }
         cost = sc.nextDouble();
         weight = sc.nextDouble();
         stones.add(new Malachite(processed, weight, cost, opacity));
-        System.out.println("\nКамень малахит добавлен");
+        System.out.println("\n" + Main.res.getString("26"));
     }
     
     /**
@@ -106,35 +107,35 @@ public class StoneUtil {
     	String color = "";
     	Scanner sc = new Scanner(System.in);
     	while(flag == 0){
-	        System.out.println("\nВыберите цвет алмаза:\n1.Бесцветный\n2.Желтый\n3.Коричневый\n4.Синий\n5.Черный");
+	        System.out.println(Main.res.getString("27"));
 	        int choiceColor = sc.nextInt();
 	        switch (choiceColor) {
 		        case 1:
-		            color = "бесцветный";
+		            color = Main.res.getString("28");
 		            flag = 1;
 		            break;
 		        case 2:
-		        	color = "желтый";
+		        	color = Main.res.getString("29");
 		            flag = 1;
 		            break;
 		        case 3:
-		        	color = "коричневый";
+		        	color = Main.res.getString("30");
 		            flag = 1;
 		            break;
 				case 4:
-					color = "синий";
+					color = Main.res.getString("31");
 		            flag = 1;
 		            break;
 				case 5:
-					color = "черный";
+					color = Main.res.getString("32");
 		            flag = 1;
 		            break;
 		        default:
-		            System.out.println("Неверный выбор пункта");
+		            System.out.println(Main.res.getString("12"));
 		            break;
 	        }
     	}
-        System.out.println("\nВведите прозрачность, цену и вес(в каратах):");
+        System.out.println("\n" + Main.res.getString("33"));
         double opacity, cost, weight;
         while (true) {
         	opacity = sc.nextDouble();
@@ -142,13 +143,13 @@ public class StoneUtil {
         		break;
         	}
         	else {
-        		System.out.println("Прозрачность должна находится в диапозоне от 0 до 1");
+        		System.out.println(Main.res.getString("23"));
         	}
         }
         cost = sc.nextDouble();
         weight = sc.nextDouble();
         stones.add(new Diamond(color, opacity, cost, weight));
-        System.out.println("\nАлмаз добавлен");
+        System.out.println("\n" + Main.res.getString("34"));
     }
     
     /**
@@ -157,9 +158,9 @@ public class StoneUtil {
     public void addRuby() {
         
         Scanner sc = new Scanner(System.in);
-        System.out.println("\nВведите твердость рубина:");
+        System.out.println("\n" + Main.res.getString("35"));
         int hardness = sc.nextInt();
-        System.out.println("\nВведите прозрачность, цену и вес(в каратах):");
+        System.out.println("\n" + Main.res.getString("33"));
         double opacity, cost, weight;
         while (true) {
         	opacity = sc.nextDouble();
@@ -167,24 +168,24 @@ public class StoneUtil {
         		break;
         	}
         	else {
-        		System.out.println("Прозрачность должна находится в диапозоне от 0 до 1");
+        		System.out.println(Main.res.getString("23"));
         	}
         }
         cost = sc.nextDouble();
         weight = sc.nextDouble();
         stones.add(new Ruby(hardness, opacity, cost, weight));
-        System.out.println("\nРубин добавлен");
+        System.out.println("\n" + Main.res.getString("36"));
     }
 
     public void delete() {
         show();
         if(stones.isEmpty())
             return;
-        System.out.println("Выберите номер удаляемого камня: ");
+        System.out.println(Main.res.getString("37") + ": ");
         Scanner sc = new Scanner(System.in);
         int index = sc.nextInt();
         if(index > stones.size())
-            System.out.println("Нет там такого");
+            System.out.println(Main.res.getString("38"));
         else
             stones.remove(index - 1);
     }
@@ -204,7 +205,7 @@ public class StoneUtil {
     	for (Stone stone:stones){
     		sumCost += stone.getCost();
     	}
-        System.out.println("Сумма стоимости камней в ожерелье: " + sumCost + " руб.");
+        System.out.println(Main.res.getString("39") + " " + rubFormat.format(sumCost));
     }
 
     public void totalWeigth() {
@@ -212,14 +213,14 @@ public class StoneUtil {
     	for (Stone stone:stones){
     		sumWeigth += stone.getWeight();
     	}
-        System.out.println("Общий вес камней во жерелье в каратах: " + sumWeigth + " кар");
+        System.out.println(Main.res.getString("40") + " " + sumWeigth + Main.res.getString("19"));
     }
 
     public void opacityChoice() {
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Введите диопазон прозрачности:\nот: ");
+    	System.out.println(Main.res.getString("41") + " ");
     	double from = sc.nextDouble();
-    	System.out.println("\nдо: ");
+    	System.out.println("\n" + Main.res.getString("42") + " ");
     	double to = sc.nextDouble();
     	
     	for (Stone stone:stones){
@@ -228,7 +229,7 @@ public class StoneUtil {
     		}
     	}
     	if(stones.isEmpty()) {
-        System.out.println("\nНет камней в ожерелье, удовлетворяющих данному условию");
+        System.out.println("\n" + Main.res.getString("43"));
         return;
     	}
     }

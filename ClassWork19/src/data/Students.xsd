@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="studentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" maxOccurs="20" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="firstName"/>
+              <xs:element type="xs:string" name="lastName"/>
+              <xs:element name="age">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+			<xs:minInclusive value="17"/>
+			<xs:maxInclusive value="102"/>
+			</xs:restriction>
+		</xs:simpleType>
+	      </xs:element>
+              <xs:element name="faculty">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:enumeration value="ksis"></xs:enumeration>
+			<xs:enumeration value="mmf"></xs:enumeration>
+			<xs:enumeration value="fitu"></xs:enumeration>
+			</xs:restriction>
+		</xs:simpleType>
+	      </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ </xs:schema>

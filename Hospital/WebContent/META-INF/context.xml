@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/myServlet">
+	<Resource name="jdbc/hospital" author="Container"
+		type="javax.sql.DataSource" maxActive="32" maxIdle="8" maxWait="10000"
+		username="root" password="1234" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/hospital" />
+</Context>
